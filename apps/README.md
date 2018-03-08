@@ -7,7 +7,7 @@ The sections below are categorized by application type and present the currently
 Image classification applications typically use one of the image classification networks in the repository to classify an image as to it's likeliness to be in each of the classes on which a network was trained.
 For a step by step tutorial on how to build an image classification network look at [Build an Image Classifier in 5 steps](https://movidius.github.io/blog/ncs-image-classifier/) at the Intel® Movidius™ Neural Compute Stick Blog
 
-|Image Classification Application| Description |+++++Thumbnail+++++|
+|Image Classification Application| Description |++++++++Thumbnail++++++++|
 |---------------------|-------------|-------|
 |[image-classifier](image-classifier/README.md) <br><br> *Canonical Image Classification Example| Python<br>Multiple Networks<br>Project that accompanies the blog [https://movidius.github.io/blog/ncs-image-classifier/.](https://movidius.github.io/blog/ncs-image-classifier) | ![](image-classifier/screen_shot.jpg)
 |[MultiStick_GoogLeNet](MultiStick_GoogLeNet/README.md) | Python<br>Caffe GoogLeNet<br>Image classification on multiple devices.|![](MultiStick_GoogLeNet/screen_shot.jpg)|

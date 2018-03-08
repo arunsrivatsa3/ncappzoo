@@ -9,7 +9,7 @@ For a step by step tutorial on how to build an image classification network look
 
 |Image Classification Application| Description |+++++Thumbnail+++++|
 |---------------------|-------------|-------|
-|[image-classifier](image-classifier/README.md) <br><br> *Canonical Image Classification Example| Python<br>Multiple Networks<br>Project that accompanies the blog [https://movidius.github.io/blog/ncs-image-classifier/.](https://movidius.github.io/blog/ncs-image-classifier) | ![](image-classifier/screen_shot.jpg)<!-- .element height="200px" width="400px" -->
+|[image-classifier](image-classifier/README.md) <br><br> *Canonical Image Classification Example| Python<br>Multiple Networks<br>Project that accompanies the blog [https://movidius.github.io/blog/ncs-image-classifier/.](https://movidius.github.io/blog/ncs-image-classifier) | ![](image-classifier/screen_shot.jpg)
 |[MultiStick_GoogLeNet](MultiStick_GoogLeNet/README.md) | Python<br>Caffe GoogLeNet<br>Image classification on multiple devices.|![](MultiStick_GoogLeNet/screen_shot.jpg)|
 |[MultiStick_TF_Inception](MultiStick_TF_Inception/README.md) | Python<br>TensorFlow Inception<br>Image classification on multiple devices.|![](MultiStick_TF_Inception/screen_shot.jpg)|
 |[classifier-gui](classifier-gui/readme.md) | Python<br>Multiple Network<br>GUI to select network and image to classify.|![](classifier-gui/screen_shot.jpg)|
@@ -23,7 +23,7 @@ For a step by step tutorial on how to build an image classification network look
 ## Object Detection
 Object detection appliations make use of one of the [object detection networks](TODO) in the repository to detect objects within an image.  The object detection networks typically determine where objects are within the image as well as what type of objects they are.
 
-|Object Detection Application| Description |screen |
+|Object Detection Application| Description |+++++Thumbnail+++++ |
 |---------------------|-------------|-------|
 |[birds](birds/README.md) | Python<br>Caffe Tiny Yolo, GoogLeNet<br>Detects birds in still images. Displays images with overlayed rectangles bird classification. |![](birds/screen_shot.jpg)|
 |[video_objects](video_objects/README.md) | Python<br>Caffe SSD MobileNet<br>Detects objects within a video file and displays video with overlayed rectangles, and prediction information. |![](video_objects/screen_shot.jpg)|
@@ -37,7 +37,7 @@ Object detection appliations make use of one of the [object detection networks](
 ## Misc Applications
 Miscellaneous applications use the NCSDK in various ways that don't fit into any of the above categories but can still be interesting.
 
-|Misc Application| Description |screen |
+|Misc Application| Description |+++++Thumbnail+++++ |
 |---------------------|-------------|-------|
 |[benchmarkncs](benchmarkncs/README.md) | Python<br>Multiple Network<br>Outputs FPS numbers for networks in the repository that take images as input.|![](benchmarkncs/screen_shot.jpg)|
 |[hello_ncs_cpp](hello_ncs_cpp/README.md) | C++<br>No Networks<br>Simple example demonstrating how compile, run, as well as open and close a device in C++ application.|![](hello_ncs_cpp/screen_shot.jpg)|

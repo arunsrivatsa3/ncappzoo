@@ -9,7 +9,7 @@ For a step by step tutorial on how to build an image classification network look
 
 |Image Classification Application| Description |screen shot or thumbnail|
 |---------------------|-------------|-------|
-|[image-classifier](image-classifier/README.md) <br><br> *Canonical Image Classification Example| Python<br>Multiple Networks<br>Project that accompanies the blog [https://movidius.github.io/blog/ncs-image-classifier/.](https://movidius.github.io/blog/ncs-image-classifier) | ![](image-classifier/screen_shot.jpg).
+|[image-classifier](image-classifier/README.md) <br><br> *Canonical Image Classification Example| Python<br>Multiple Networks<br>Project that accompanies the blog [https://movidius.github.io/blog/ncs-image-classifier/.](https://movidius.github.io/blog/ncs-image-classifier) | ![](image-classifier/screen_shot.jpg).........................................
 |[MultiStick_GoogLeNet](MultiStick_GoogLeNet/README.md) | Python<br>Caffe GoogLeNet<br>Image classification on multiple devices.|![](MultiStick_GoogLeNet/screen_shot.jpg)|
 |[MultiStick_TF_Inception](MultiStick_TF_Inception/README.md) | Python<br>TensorFlow Inception<br>Image classification on multiple devices.|![](MultiStick_TF_Inception/screen_shot.jpg)|
 |[classifier-gui](classifier-gui/readme.md) | Python<br>Multiple Network<br>GUI to select network and image to classify.|![](classifier-gui/screen_shot.jpg)|

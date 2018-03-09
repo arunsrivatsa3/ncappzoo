@@ -13,4 +13,4 @@ This directory contains multiple subdirectories. Each subdirectory contains soft
 # TensorFlow Misc Networks for NCSDK
 |Network| Description |
 |---------------------|-------------|
-|[facenet](facemet/README.md) |MobileNet Single Shot Detector takes an image, detects the 20 PASCAL object classes as specified in the ([Visual Object Classes Challenges](http://host.robots.ox.ac.uk/pascal/VOC/)), their bounding boxes, and classifications.  |
+|[facenet](facenet/README.md) |FaceNet is a nework that is trained to find and quantify landmarks on faces in general.  By comparing the face landmark quantification values (network inference output) on two images, it is possible to determine how likely the two faces are of the same person.  This is based on [work by David Sandberg](https://github.com/davidsandberg/facenet).  |

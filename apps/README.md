@@ -1,7 +1,9 @@
-# Application Examples for the NCSDK
+# Applications for the NCSDK
 
 This directory contains subdirectories for applications that make use of the NCSDK.  Typically the applications here make use of one or more of the neural networks in the caffe, and/or tensorflow directories.  They are also intended to be more involved and provide more of a real world application of the networks rather than simply serving as an example of the technology.
 The sections below are categorized by application type and present the currently available applications in the repository in succinct lists.
+
+Each application directory has a README that explains how to build and run it, as well as a Makefile that automates the steps for you.  The links in the tables below will take you to the README files for each application.
 
 ## Image Classification Applications
 Image classification applications typically use one of the image classification networks in the repository to classify an image as to it's likeliness to be in each of the classes on which a network was trained.
@@ -9,7 +11,7 @@ For a step by step tutorial on how to build an image classification network look
 
 |Image Classification Application| Description |++++++Thumbnail++++++|
 |---------------------|-------------|-------|
-|[image-classifier](image-classifier/README.md) <br><br> *Canonical Image Classification Example| Python<br>Multiple Networks<br>Project that accompanies the blog [https://movidius.github.io/blog/ncs-image-classifier/.](https://movidius.github.io/blog/ncs-image-classifier) | ![](image-classifier/screen_shot.jpg)
+|[image-classifier](image-classifier/README.md) <br><br> *Canonical Image Classification Example| Python<br>Multiple Networks<br>Project that accompanies the blog [https://movidius.github.io/blog/ncs-image-classifier/.](https://movidius.github.io/blog/ncs-image-classifier).  If you are getting started with image classification this is a good first stop. | ![](image-classifier/screen_shot.jpg)
 |[MultiStick_GoogLeNet](MultiStick_GoogLeNet/README.md) | Python<br>Caffe GoogLeNet<br>Image classification on multiple devices.|![](MultiStick_GoogLeNet/screen_shot.jpg)|
 |[MultiStick_TF_Inception](MultiStick_TF_Inception/README.md) | Python<br>TensorFlow Inception<br>Image classification on multiple devices.|![](MultiStick_TF_Inception/screen_shot.jpg)|
 |[classifier-gui](classifier-gui/readme.md) | Python<br>Multiple Network<br>GUI to select network and image to classify.|![](classifier-gui/screen_shot.jpg)|
@@ -20,18 +22,17 @@ For a step by step tutorial on how to build an image classification network look
 |[stream_infer](stream_infer/readme.md) | Python<br>Caffe SqueezeNet<br>Uses gstreamer to grab frames from a live camera stream and run inferences on them while displaying top results in real time. |![](stream_infer/screen_shot.jpg)|
 
 
-## Object Detection
+## Object Detection Applications
 Object detection appliations make use of one of the [object detection networks](TODO) in the repository to detect objects within an image.  The object detection networks typically determine where objects are within the image as well as what type of objects they are.
 
 |Object Detection Application| Description |+++++Thumbnail+++++ |
 |---------------------|-------------|-------|
 |[birds](birds/README.md) | Python<br>Caffe Tiny Yolo, GoogLeNet<br>Detects birds in still images. Displays images with overlayed rectangles bird classification. |![](birds/screen_shot.jpg)|
-|[video_objects](video_objects/README.md) | Python<br>Caffe SSD MobileNet<br>Detects objects within a video file and displays video with overlayed rectangles, and prediction information. |![](video_objects/screen_shot.jpg)|
 |[stream_ty_gn](stream_ty_gn/README.md) | Python<br>Caffe Tiny Yolo, GoogLeNet<br>Sends frames of live camera stream to Tiny Yolo for object detection and then crops each object and sends that to GoogLeNet for further classification. This application requires two NCS devices, one for each network.  Look at this example for straight forward example, but look at the threaded version if you are interested in better performance. |![](stream_ty_gn/screen_shot.jpg)|
 |[stream_ty_gn_threaded](stream_ty_gn_threaded/README.md) | Python<br>Caffe Tiny Yolo, GoogLeNet<br>Sends frames of live camera stream to Tiny Yolo for object detection and then crops each object and sends that to GoogLeNet for further classification. This application requires two NCS devices, one for each network.  This is a threaded, better performing, and slightly more complex version of the stream_ty_gn application.   |![](stream_ty_gn_threaded/screen_shot.jpg)|
 |[street_cam](street_cam/README.md) | C++<br>Caffe TinyYolo, GoogLeNet<br>Processes a video file (presumably produced by a street camera) and overlays boxes and labels around the objects detected.  Objects are detected by Tiny Yolo and then further classified by GoogLeNet. This requires two NCS devices.  Look at this example for straight forward example, but look at the threaded version if you are interested in better performance.|![](street_cam/screen_shot.jpg)|
 |[street_cam_threaded](street_cam_threaded/README.md) | C++<br>Caffe TinyYolo, GoogLeNet<br>Processes a video file (presumably produced by a street camera) and overlays boxes and labels around the objects detected.  Objects are detected by Tiny Yolo and then further classified by GoogLeNet. This requires two NCS devices.  This is a threaded, better performing, and more complex version of the street_cam application.|![](street_cam/screen_shot.jpg)|
-|[video_objects](video_objects/README.md) | C++<br>Caffe SSD MobileNet<br>Processes a video file and overlays boxes and labels around the objects detected and displays results in a GUI.|![](video_objects/screen_shot.jpg)|
+|[video_objects](video_objects/README.md) | Python++<br>Caffe SSD MobileNet<br>Processes a video file and overlays boxes and labels around the objects detected and displays results in a GUI as frames are available.|![](video_objects/screen_shot.jpg)|
 
 
 ## Misc Applications
